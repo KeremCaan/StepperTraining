@@ -13,6 +13,7 @@
 		527537D82A78DB3E002EA09C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 527537D62A78DB3E002EA09C /* Main.storyboard */; };
 		527537DA2A78DB3F002EA09C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 527537D92A78DB3F002EA09C /* Assets.xcassets */; };
 		527537DD2A78DB3F002EA09C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 527537DB2A78DB3F002EA09C /* LaunchScreen.storyboard */; };
+		527537E62A78DC2A002EA09C /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 527537E52A78DC2A002EA09C /* SnapKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				527537E62A78DC2A002EA09C /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = NeonAcademySteppers;
+			packageProductDependencies = (
+				527537E52A78DC2A002EA09C /* SnapKit */,
+			);
 			productName = NeonAcademySteppers;
 			productReference = 527537CD2A78DB3E002EA09C /* NeonAcademySteppers.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = 527537C42A78DB3E002EA09C;
+			packageReferences = (
+				527537E42A78DC2A002EA09C /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 527537CE2A78DB3E002EA09C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -356,6 +364,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		527537E42A78DC2A002EA09C /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 5.6.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		527537E52A78DC2A002EA09C /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 527537E42A78DC2A002EA09C /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 527537C52A78DB3E002EA09C /* Project object */;
 }
